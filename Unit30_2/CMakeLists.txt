@@ -5,10 +5,12 @@ project(module30homework)
 set(SRC_LIST 
           main.cpp
           threadpool/threadpool.cpp
-          requesthandler/requesthandler.cpp)   
+          threadpoolqueue/threadpoolqueue.cpp)   
           
-include_directories(threadpool)  
-include_directories(requesthandler)        
+include_directories(threadpool) 
+include_directories(threadpoolqueue)  
+include_directories(requesthandler)    
+include_directories(blockedqueue)      
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 
